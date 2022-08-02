@@ -16,7 +16,10 @@
     "url": "https://github.com/dashkin-dima/polyfill-methods/issues"
   },
   "homepage": "https://github.com/dashkin-dima/polyfill-methods#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/preset-env": "^7.18.10",
+    "babel-jest": "^28.1.3"
+  },
   "devDependencies": {
     "jest": "^28.1.3"
   }
