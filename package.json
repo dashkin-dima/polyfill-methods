@@ -1,0 +1,23 @@
+{
+  "name": "polyfill-methods",
+  "version": "1.0.0",
+  "description": "polyfill static methods",
+  "main": " ",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashkin-dima/polyfill-methods.git"
+  },
+  "author": "dashkin-dima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashkin-dima/polyfill-methods/issues"
+  },
+  "homepage": "https://github.com/dashkin-dima/polyfill-methods#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
