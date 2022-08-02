@@ -1,13 +1,15 @@
 const allSettled = (promises) => {
-    const wrappedPromises = promises.map((promise) => 
+  const wrappedPromises = promises.map((promise) =>
     promise
-    .then((value) => ({
-        status: 'fulfilled', value
-    }))
-    .catch((reason) => ({
-        status: 'rejected', reason
-    }))
-    );
+      .then((value) => ({
+        status: "fulfilled",
+        value,
+      }))
+      .catch((reason) => ({
+        status: "rejected",
+        reason,
+      }))
+  );
 
-    return Promise.all(wrappedPromises);
-}
+  return Promise.all(wrappedPromises);
+};
