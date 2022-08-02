@@ -1,4 +1,4 @@
-const all = (promises) =>
+export const all = (promises) =>
   new Promise((resolve, reject) => {
     let count = 0;
     const result = [];
