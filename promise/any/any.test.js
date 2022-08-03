@@ -2,7 +2,7 @@ import { createPromise } from "../../testUtils/createPromise";
 import { any } from "./index";
 
 describe("promise any", () => {
-  test("resolve first promise", () => {
+  test("resolve fastest promise", () => {
     const firstResolvePromise = createPromise(1, "first");
     const secondResolvePromise = createPromise(2, "second");
     expect(any([firstResolvePromise, secondResolvePromise])).resolves.toBe(

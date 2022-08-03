@@ -22,8 +22,8 @@ describe("promise all", () => {
 
   test("reject when reject any promise", () => {
     const firstResolvePromise = createPromise(2, "first");
-    const secondResolvePromise = createPromise(1, "second", false);
-    expect(all([firstResolvePromise, secondResolvePromise])).rejects.toBe(
+    const secondRejectPromise = createPromise(1, "second", false);
+    expect(all([firstResolvePromise, secondRejectPromise])).rejects.toBe(
       "second"
     );
   });
