@@ -1,7 +1,10 @@
-const create = (proto, propertiesObject) => {
+export const create = (proto, propertiesObject) => {
   const object = {};
   object.__proto__ = proto;
 
-  Object.defineProperties(object, propertiesObject);
+  if (propertiesObject) {
+    Object.defineProperties(object, propertiesObject);
+  }
+
   return object;
 };
