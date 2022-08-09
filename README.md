@@ -1,1 +1,1 @@
-collection of polyfill static methods 
+Collection of polyfill methods for interview.
